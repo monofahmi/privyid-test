@@ -1,0 +1,34 @@
+Berikut adalah jawaban dari Pre test Privyid
+
+No.2 
+
+jawaban dari soal nomor 2 ini dapat diakses pada laman url : 
+
+No. 3
+
+{
+"code"		: 500,
+"errors"	: [],
+"messages"	: "internal server error",
+"app_name"	: "USRMRCHNT"
+}
+
+Berdasarkan hasil error tersebut bisa diidentifikasi;
+Status code 500 berarti terjadi error pada server. saat client melakukan suatu request Get pada User merchant. status error dalam array tersebut bernilai null,
+ini bisa terjadi saat eksekusi yang diminta oleh client tidak diterima oleh target yakni backend.
+untuk mengatasinya, client bisa diminta untuk me-reload laman tersebut, dan jika masih error maka mencoba menghapus cache terlebih dahulu, dan jika masih terjadi error maka baiknya dapat dibantu untuk perbaikan error oleh back end engineer.
+
+
+No. 4
+
+Dalam source api tersebut dapat diketahui bahwa database recipients memiliki relasi database one to many.
+
+Status code yang di dapat adalah 200, yang artinya success telah mengirim request.
+
+Data yang ada pada request itu terdiri dari;
+- document Token yang digenerate JWToken yang bersifat unique,
+- recipients antar user dengan id yang berbeda, masing-masing user memiliki tipe/tugas yang berbeda yakni reviewer dan signer, kemudian signatory status menunjukan bahwa dokumen dengan token tersebut statusnya completed reviewer dan in progress signer.
+- document status saat ini adalah In progress karena masih berada pada user id DE2345 dan belum di signed
+- url document digenerate ketika user upload document pertama kali dan disimpan pada cloud server sandbox milik privyid. Nantinya saat di frontend user ingin menampilkan dokumen tersebut maka menggunakan method get dengan data type string link tersebut
+
+messages yang dilontarkan oleh server adalah "successfully get a status document", artinya server telah menerima request dari user dengan baik.
