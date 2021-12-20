@@ -61,4 +61,6 @@ privyid, type, enterpriseToken belongsTo recipient
 
 Jika method POST ini berhasil maka status code 200, dokumen telah terupload dan dibagikan dari owner kepada recipient
 jika privyid tersebut tidak dikenal oleh server atau belum terdaftar pada server maka akan menghasilkan status code 404
+
+Thank you, regards Fahmi
 */

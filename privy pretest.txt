@@ -32,3 +32,5 @@ Data yang ada pada request itu terdiri dari;
 - url document digenerate ketika user upload document pertama kali dan disimpan pada cloud server sandbox milik privyid. Nantinya saat di frontend user ingin menampilkan dokumen tersebut maka menggunakan method get dengan data type string link tersebut
 
 messages yang dilontarkan oleh server adalah "successfully get a status document", artinya server telah menerima request dari user dengan baik.
+
+Thank you, regards Fahmi
